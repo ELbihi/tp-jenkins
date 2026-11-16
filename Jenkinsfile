@@ -16,7 +16,7 @@ pipeline {
         }
                 stage('Installation des dépendances') {
             steps {
-                bat 'python -m venv .venv'
+                bat '"C:\\Users\\bbihi\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe" -m venv .venv'
                 bat '.venv\\Scripts\\python.exe -m pip install -r requirements.txt'
             }
         }
